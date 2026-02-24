@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: gitlab-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
+      - key: GITLAB_TOKEN
+        sync: false
+      - key: GITLAB_URL
+        value: https://gitlab.informatics.ru
+      - key: PROJECT_ID
+        sync: false
