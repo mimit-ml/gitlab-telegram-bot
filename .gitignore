@@ -1,4 +1,4 @@
-# Виртуальное окружение
+# Virtual environment
 .venv/
 venv/
 ENV/
@@ -17,10 +17,14 @@ __pycache__/
 *.swp
 *.swo
 
-# Логи
+# Logs
 *.log
 logs/
 
-# Системные файлы
+# System files
 .DS_Store
 Thumbs.db
+
+# Secrets
+.env
+*.env
