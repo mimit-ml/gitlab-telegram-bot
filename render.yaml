@@ -2,7 +2,7 @@ services:
   - type: web
     name: gitlab-bot
     runtime: python
-    pythonVersion: 3.11.8  # <--- ИЗМЕНЕНО с 3.14.3 на стабильную 3.11
+    pythonVersion: 3.11.0  # Изменено с 3.11.8 на заведомо рабочую версию
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
